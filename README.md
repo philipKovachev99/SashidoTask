@@ -25,7 +25,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 This is a simple and comprehensive tutorial that aims to show how to insert records into the Sashido database, once the user has created an app using the dashboard.
-
+<br/>
 ### Prerequisites
 
 * npm
@@ -38,6 +38,7 @@ This is a simple and comprehensive tutorial that aims to show how to insert reco
   npm i parse
   ```
 ### Installation
+<br/>
 
 1. Clone the repo
    ```sh
@@ -56,11 +57,12 @@ This is a simple and comprehensive tutorial that aims to show how to insert reco
    node main.js 
    ```
 
-
+<br/>
 <!-- GETTING STARTED -->
 ## Getting Started
 We need to use the Javascript Parse SDK in order to establish a connection with the Sashido database. The easiest way to integrate it into our JavaScript project is through the [npm module](https://www.npmjs.com/package/parse). Using [Node.js](https://nodejs.org/en/) to run our JavaScript file to add the records is beneficial as well. 
 
+<br/>
 
 ## Creating a package.json file in our folder
  In your desired folder create a package.json file by typing
@@ -69,16 +71,19 @@ We need to use the Javascript Parse SDK in order to establish a connection with 
 ```
 Hit Enter on every prompted question until the initialization process is complete.
 
+<br/>
 ## Integrating the Parse SDK int our project via npm
  In the project folder where we have our package.json file
   ```sh
  npm i parse --saved
 ```
-
+<br/>
 ## Requiring the Parse SDK int our project in the beginning of our main.js file
 ```sh
 const Parse = require('parse/node');
 ```
+<br/>
+
 ## Initializing a connection to our Sashido database
 Open the Sashido Dashboard of your App and navigate to the Getting Started page. Copy the 
 entire code and paste it below the previous code that we wrote
@@ -99,6 +104,7 @@ After we have created our class we need to initialize it and extend it in our co
 ```sh
  const MovieObject = Parse.Object.extend("Movies");
 ```
+<br/>
 
 ## Creating a collection of records and saving them to our database
 Once we have required the Parse SDK and we have initialized a connection to our Sashido database we can start writing the 
@@ -113,6 +119,7 @@ use an array:
 ```
 In this snippet I am creating an arrow function that accepts an array with my three movie names (you can add as much as you like), then I create a variable 
 using the new MovieObject() and I use it to set the name column for each record. 
+<br/>
 
 ## Saving our records to the database and error handling:
 Now that we have our collection of records we can save them to the database and see if everything is working. I will create two functions, one that will inform us
