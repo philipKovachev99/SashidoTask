@@ -119,8 +119,8 @@ use an array:
 ```
 In this snippet I am creating an arrow function that accepts an array with my three movie names (you can add as much as you like), then I create a variable 
 using the new MovieObject() and I use it to set the name column for each record. 
-<br/>
 
+<br/>
 ## Saving our records to the database and error handling:
 Now that we have our collection of records we can save them to the database and see if everything is working. I will create two functions, one that will inform us
 that our records have been inserted successfully and one that prints an error in case our logic fails
